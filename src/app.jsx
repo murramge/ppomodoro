@@ -23,10 +23,12 @@ function App(props) {
 
   //   console.log(`hour:${selecthour}, min:${selectmin}, sec:${selectsec}`);
 
+  const hasInput = [hour, min, sec].every((item) => item);
+
   return (
     <>
       <TimerForm onHour={onHour} onMin={onMin} onSec={onSec}></TimerForm>
-      <Timer onHour={hour} onMin={min} onSec={sec}></Timer>
+      <>{hasInput && <Timer onHour={hour} onMin={min} onSec={sec}></Timer>}</>
     </>
   );
 }
