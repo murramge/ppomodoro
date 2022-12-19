@@ -18,10 +18,6 @@ const Timer = (props) => {
 
   console.log("123", tempHour * 60 * 60 + tempMin * 60 + tempSec);
   const interval = useRef(null);
-
-  console.log("call");
-  console.log(interval);
-  console.log("이니셜", initialTime);
   const [hour, setHour] = useState(padNumber(tempHour, 2));
   const [min, setMin] = useState(padNumber(tempMin, 2));
   const [sec, setSec] = useState(padNumber(tempSec, 2));

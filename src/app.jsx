@@ -21,8 +21,6 @@ function App(props) {
   const min = parseInt(selectmin);
   const sec = parseInt(selectsec);
 
-  //   console.log(`hour:${selecthour}, min:${selectmin}, sec:${selectsec}`);
-
   const hasInput = [hour, min, sec].every((item) => item);
 
   return (

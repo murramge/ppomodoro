@@ -26,7 +26,7 @@ function TimerForm(props) {
         <input ref={hourInputRef} type="text" className="hour-input" />
         <input ref={minInputRef} type="text" className="min-input" />
         <input ref={secInputRef} type="text" className="sec-input" />
-        <button className="timer-set-button" onClick={onSubmit}>
+        <button className="timersetbutton" onClick={onSubmit}>
           set
         </button>
       </form>
